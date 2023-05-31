@@ -1,4 +1,4 @@
-{
+g{
   "name": "university-management",
   "version": "1.0.0",
   "description": "",
@@ -9,9 +9,11 @@
   "author": "kamrul hasan",
   "license": "ISC",
   "devDependencies": {
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "dotenv": "^16.1.1",
     "express": "^4.18.2",
     "mongoose": "^7.2.2"
   }
