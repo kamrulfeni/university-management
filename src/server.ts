@@ -13,7 +13,7 @@ async function bootstrap() {
     } catch (err) {
         console.log('failed to connect database', err);
     }
-    // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+   
 }
 
 bootstrap();
