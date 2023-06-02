@@ -9,9 +9,9 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use('/api/v1/users/' ,usersRouter)
+app.use('/api/v1/users/', usersRouter)
 //testing
-app.get('/', async(req: Request, res: Response) => {
+app.get('/',  (req: Request, res: Response) => {
   // await userService.createUser({
   //   id:'999',
   //   password:'1234',
