@@ -14,8 +14,8 @@
   },
   "author": "kamrul hasan",
   "license": "ISC",
-  "lint-staged":{
-    "src/**/*.ts":"yarn lint-prettier"
+  "lint-staged": {
+    "src/**/*.ts": "yarn lint-prettier"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
