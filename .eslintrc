@@ -12,7 +12,7 @@
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     //"no-unused-vars": "error",
-    "no-console":"error",
+    "no-console":"warn",
     "no-undef":"error",
     "no-unused-expressions":"error",
     "no-unreachable":"error"
@@ -23,5 +23,8 @@
     "browser": true,
     "node": true,
     "es2021": true
-  }
+  },
+"globals": {
+  "process":"readonly"
+}
 }

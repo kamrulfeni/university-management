@@ -3,7 +3,9 @@ import cors from 'cors'
 //import userService from './app/modules/users/user.service'
 const app: Application = express()
 
-import usersRouter from './app/modules/users/user.route'
+import { UserRoutes } from './app/modules/users/user.route'
+
+import ApiError from './errors/ApiError'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
 
 app.use(cors())
@@ -11,13 +13,13 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use('/api/v1/users/', usersRouter)
-
+app.use('/api/v1/users/', UserRoutes)
 
 //testing
-// app.get('/', (req: Request, res: Response, next: NextFunction) => {
-//    throw new ApiError(400, 'Ore Baba Error')
-  //throw new Error('ore Baba Error')
+app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+  //   Promise.reject((new Error('unhandled Promise Rejection')))
+  //   throw new ApiError(400, 'Ore Baba Error')
+  throw new Error('ore Baba Error')
   // next('ore baba error')
   //   // await userService.createUser({
   //   //   id:'999',
@@ -26,7 +28,7 @@ app.use('/api/v1/users/', usersRouter)
   //   // })
   //   res.send('Working successfully')
   // global error handler
-// })
+})
 app.use(globalErrorHandler)
 
 export default app
