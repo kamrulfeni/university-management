@@ -7,6 +7,7 @@ import { UserRoutes } from './app/modules/users/user.route';
 
 // import ApiError from './errors/ApiError'
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
+import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
 
 app.use(cors());
 // parser
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/users/', UserRoutes);
-
+app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
 //testing
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
 //   Promise.reject((new Error('unhandled Promise Rejection')))
