@@ -13,6 +13,6 @@ export const UserValidation = {
   createUserZodSchema,
 }
 
-// // req-validation
+// /req-validation
 // body --> object
 // data --->object
