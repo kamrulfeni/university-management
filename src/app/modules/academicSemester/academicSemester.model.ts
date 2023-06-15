@@ -1,9 +1,13 @@
 import { Schema, model } from 'mongoose';
-import { academicSemesterCodes, academicSemesterMonths, academicSemesterTitles } from './academicSemester.constant';
+import {
+  academicSemesterCodes,
+  academicSemesterMonths,
+  academicSemesterTitles,
+} from './academicSemester.constant';
 import { IAcademicSemester } from './academicSemester.interface';
 
-
-
+import status from 'http-status';
+import ApiError from '../../../errors/ApiError';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -38,7 +42,24 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   }
 );
 
+// pre hook dia multpule data   thake virote rakha
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AcademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  });
+  if (isExist) {
+    throw new ApiError(status.CONFLICT, 'Academic Semester is already exist !');
+  }
+  next();
+});
+
 export const AcademicSemester = model<IAcademicSemester>(
   'AcademicSemester',
   academicSemesterSchema
 );
+
+// handeling same year and same semester issue
+// Data -> check -? Same year && same semester
+
+// same year && same semester --> duplicate entry
