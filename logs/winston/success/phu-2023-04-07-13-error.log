@@ -1,0 +1,6 @@
+Tue Jul 04 2023 13:24:12  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Tue Jul 04 2023 13:34:18  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Tue Jul 04 2023 13:38:27  [ph!] 
+  error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"

@@ -1,0 +1,6 @@
+Tue Jul 04 2023 16:11:30  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Tue Jul 04 2023 16:31:9  [ph!] 
+  error: $regex has to be a string
+Tue Jul 04 2023 16:47:31  [ph!] 
+  error: $regex has to be a string

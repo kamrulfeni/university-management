@@ -17,7 +17,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemesterTitles,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
@@ -51,7 +51,10 @@ academicSemesterSchema.pre('save', async function (next) {
     year: this.year,
   });
   if (isExist) {
-    throw new ApiError(httpStatus.CONFLICT, 'Academic Semester is already exist !');
+    throw new ApiError(
+      httpStatus.CONFLICT,
+      'Academic Semester is already exist !'
+    );
   }
   next();
 });
@@ -62,4 +65,3 @@ export const AcademicSemester = model<IAcademicSemester>(
 );
 
 // handeling same year and same semester issue
-

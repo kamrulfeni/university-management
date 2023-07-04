@@ -9,8 +9,10 @@ const router = express.Router();
 router.post(
   '/create-semester',
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
- AcademicSemesterController.createSemester
+  AcademicSemesterController.createSemester
   //UserController.createUser
 );
+
+router.get('/', AcademicSemesterController.getAllSemesters);
 
 export const AcademicSemesterRoutes = router;

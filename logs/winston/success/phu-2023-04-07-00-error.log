@@ -1,0 +1,22 @@
+Tue Jul 04 2023 0:8:0  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Tue Jul 04 2023 0:17:31  [ph!] 
+  error: failed to connect database Connection to ac-6tvmtq7-shard-00-02.vvaslnb.mongodb.net:27017 interrupted due to server monitor timeout
+Tue Jul 04 2023 0:38:36  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:38:42  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:38:46  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:38:51  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:39:20  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:40:14  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:40:20  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:40:24  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Tue Jul 04 2023 0:40:39  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net

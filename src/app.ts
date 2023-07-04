@@ -1,4 +1,4 @@
-import express, { Application } from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 //import userService from './app/modules/users/user.service'
 const app: Application = express();
@@ -6,6 +6,7 @@ const app: Application = express();
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 import routes from './app/routes';
+import httpStatus from 'http-status';
 
 app.use(cors());
 // parser
@@ -30,5 +31,20 @@ app.use('/api/v1/', routes);
 // global error handler
 // })
 app.use(globalErrorHandler);
+
+// handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not found ',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'API Not Found',
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
