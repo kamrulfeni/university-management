@@ -1,0 +1,14 @@
+Fri Jul 07 2023 5:19:3  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Fri Jul 07 2023 5:19:29  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Fri Jul 07 2023 5:19:55  [ph!] 
+  error: failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.vvaslnb.mongodb.net
+Fri Jul 07 2023 5:21:17  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Fri Jul 07 2023 5:42:14  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Fri Jul 07 2023 5:52:40  [ph!] 
+  error: Cannot read properties of undefined (reading 'year')
+Fri Jul 07 2023 5:53:4  [ph!] 
+  error: Cannot read properties of undefined (reading 'year')

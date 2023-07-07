@@ -1,0 +1,14 @@
+Thu Jul 06 2023 22:18:53  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Thu Jul 06 2023 22:19:24  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Thu Jul 06 2023 22:20:31  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Thu Jul 06 2023 22:22:41  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Thu Jul 06 2023 22:23:36  [ph!] 
+  error: failed to connect database connect ETIMEDOUT 34.209.254.50:27017
+Thu Jul 06 2023 22:37:58  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms
+Thu Jul 06 2023 22:40:4  [ph!] 
+  error: Operation `users.findOne()` buffering timed out after 10000ms

@@ -1,0 +1,2 @@
+Thu Jul 06 2023 23:29:32  [ph!] 
+  error: failed to connect database querySrv ETIMEOUT _mongodb._tcp.cluster0.vvaslnb.mongodb.net

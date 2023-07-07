@@ -7,6 +7,11 @@ import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import {
+  generateFacultyId,
+  generateStudentId,
+} from './app/modules/users/user.utils';
+//import { generateStudentId } from './app/modules/users/user.utils';
 
 app.use(cors());
 // parser
@@ -46,5 +51,15 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+// test
+// const academicSemester = {
+//   code: '01',
+//   year: '2027',
+// };
 
+// const testId = async () => {
+//   const testId = await generateStudentId(academicSemester);
+//   console.log(testId);
+// };
+// testId();
 export default app;

@@ -1,8 +1,8 @@
-import { NextFunction, Request, Response } from 'express'
-import { AnyZodObject } from 'zod'
+import { NextFunction, Request, Response } from 'express';
+import { AnyZodObject, ZodEffects } from 'zod';
 
 const validateRequest =
-  (schema: AnyZodObject) =>
+  (schema: AnyZodObject | ZodEffects<AnyZodObject>) =>
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       await schema.parseAsync({
@@ -10,10 +10,10 @@ const validateRequest =
         query: req.query,
         params: req.params,
         cookies: req.cookies,
-      })
-      return next()
+      });
+      return next();
     } catch (error) {
-      next(error)
+      next(error);
       // res.status(400).json({
       //   error: err,
 
@@ -21,6 +21,6 @@ const validateRequest =
       // message: 'failed to create user',
       //})
     }
-  }
-export default validateRequest
+  };
+export default validateRequest;
 // middleware---> validateRequest(userZodSchema)=> async (req,next)

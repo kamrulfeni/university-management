@@ -39,7 +39,11 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   },
   {
     timestamps: true,
-  }
+    toJSON: {
+      virtuals: true,
+    },
+  },
+  
 );
 // Data -> check -? Same year && same semester
 

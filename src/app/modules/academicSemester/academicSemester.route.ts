@@ -12,7 +12,18 @@ router.post(
   AcademicSemesterController.createSemester
   //UserController.createUser
 );
+router.get('/:id', AcademicSemesterController.getSingleSemester);
+router.patch(
+  '/:id',
+  validateRequest(AcademicSemesterValidation.updateAcademicSemesterZodSchema),
+  AcademicSemesterController.updateSemester
+);
+router.delete('/:id', AcademicSemesterController.deleteSemester);
 
 router.get('/', AcademicSemesterController.getAllSemesters);
 
 export const AcademicSemesterRoutes = router;
+
+// Ensure 1: Route level : Update--> title: code give me title and code both, nether
+
+// ensure 2: Service level : Update--> Mapping title : code
