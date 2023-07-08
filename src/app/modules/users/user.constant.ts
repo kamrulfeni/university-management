@@ -1,1 +1,1 @@
-export const gender = ['ma']
+export const gender = ['male'];

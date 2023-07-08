@@ -7,10 +7,10 @@ import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 import routes from './app/routes';
 import httpStatus from 'http-status';
-import {
-  generateFacultyId,
-  generateStudentId,
-} from './app/modules/users/user.utils';
+// import {
+//   generateFacultyId,
+//   generateStudentId,
+// } from './app/modules/users/user.utils';
 //import { generateStudentId } from './app/modules/users/user.utils';
 
 app.use(cors());
@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/v1/', routes);
+app.use('/api/v1', routes);
 // app.use('/api/v1/users/', UserRoutes);
 // app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
 //testing

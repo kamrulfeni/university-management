@@ -10,4 +10,11 @@ router.post(
   UserController.createStudent
 );
 
+router.post(
+  '/create-faculty',
+  validateRequest(UserValidation.createFacultyZodSchema),
+  // auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  UserController.createFaculty
+);
+
 export const UserRoutes = router;

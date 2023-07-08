@@ -5,7 +5,7 @@ export const studentSearchableFields = [
   'id',
   'email',
   'contactNo',
-  'name.fisrtName',
+  'name.firstName',
   'name.middleName',
   'name.lastName',
 ];
@@ -18,3 +18,12 @@ export const studentFilterableFields = [
   'contactNo',
   'emergencyContactNo',
 ];
+
+// export const studentFilterableFields = [
+//   'searchTerm',
+//   'title',
+//   'code',
+//   'year',
+// ];
+
+// export const StudentSearchableFields = ['title', 'code', 'year'];

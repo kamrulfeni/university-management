@@ -55,3 +55,41 @@ export type IStudentFilters = {
   contactNo?: string;
   emergencyContactNo?: string;
 };
+
+// {
+//   "password":"123456",
+
+// "student":{
+//     "name":{
+//       "firstName": "Kamrul",
+//       "middleName": "Hasan",
+//       "lastName": "Mithu"
+//     },
+//     "dateOfBirth":"23-05-1999",
+//     "gender":"male",
+//     "email": "user@gmail.com",
+//     "contactNo":"user_4",
+//     "emergencyContactNo": "0161000000000",
+//     "bloodGroup":"B+",
+//     "presentAddress": "CTG",
+//     "permanentAddress":"CTG",
+//     "academicSemester":"64a3ea560e8fc6380aa2a229" ,
+//     "academicDepartment":"64a6cbc319690ffb262b7a7e",
+//     "academicFaculty":"64a6cb5019690ffb262b7a7c",
+//     "guardian": {
+//         "fatherName": "jalal Ahaammed",
+//         "fatherOccupation": "Forener",
+//         "fatherContactNo": "0181275577",
+//         "motherName": "kKhinur",
+//         "motherOccupation": "HouseWife",
+//         "motherContactNo": "0182290767",
+//         "address": "CTG"
+//       },
+//      "localGuardian": {
+//         "name": "Jalal Ahammed",
+//         "occupation": "Probashi",
+//         "contactNo": "01838758757",
+//         "address": "CTG"
+//       }
+//     }
+//   }
